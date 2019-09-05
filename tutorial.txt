@@ -5,11 +5,11 @@ Exemplo de CRUD em Python e mySql e html
 2 - criar o diretodio: web/tarefa_crud
 
 3 - instalar via terminal dentro do projeto (web/tarefa_crud):
-  pip install flask
-  pip install flask_mysql
-  pip install Flask-Table
-  pip install Flask-Cors
-  pip install -U flask-cors 
+ 	 pip install flask
+  	pip install flask_mysql
+  	pip install Flask-Table
+  	pip install Flask-Cors
+  	pip install -U flask-cors 
   
 4 - criar os arquivos: 
 	db_config.py, 
@@ -26,8 +26,7 @@ Exemplo de CRUD em Python e mySql e html
   
 7 - criar o banco de dados: my_python e a tabela: tarefa - no mySql
 
-8 - instalar o mysql-connector-python da versão do python que foi instalada na sua maquina 
-    e para seu sistema operacional. 
+8 - instalar o mysql-connector-python da versão do python que foi instalada na sua maquina e para seu sistema operacional. 
     
 9 - iniciar o sistema com o comando via terminal dentro da pasta tarefa_crud: 
 	python main.py
