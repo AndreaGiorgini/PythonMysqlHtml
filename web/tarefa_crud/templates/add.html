@@ -1,0 +1,21 @@
+<doctype html>
+        <title>Adicionar Tarefa</title>
+		<meta http-equiv="Content-Type" content="latin1" />
+        <h2>Adicionar Tarefa</h2>
+        <form method="post" action="/add">
+            <dl>
+                <p>
+                    <input name="inputTitulo" value="" type="text" placeholder="Titulo" autocomplete="off" required>
+                </p>
+                <p>
+                    <input name="inputDescricao" value="" type="text" placeholder="Descricao" autocomplete="off" required>
+                </p>
+                <p>
+                    <input name="inputStatus" value="" type="text" placeholder="A,C,D,F" autocomplete="off" required><br>
+					Status da tarefa: A(aberta), C(cancelada), D(desenvolvendo), F (finalizada)
+                </p>
+            </dl>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>

@@ -1,0 +1,19 @@
+<doctype html>
+    <title>Lista de Tarefas</title>
+	<meta http-equiv="Content-Type" content="latin1" />
+    <h2>Lista de Tarefas</h2>
+    <p><a href="{{ url_for('.add_tarefa_view') }}"> Adicionar Tarefa </a></p>
+    
+    <p>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      {% endwith %}
+    </p>
+    
+    {{ table }}

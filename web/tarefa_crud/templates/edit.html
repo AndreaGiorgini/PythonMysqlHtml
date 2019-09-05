@@ -1,0 +1,22 @@
+<doctype html>
+        <title>Editar Tarefa</title>
+		<meta http-equiv="Content-Type" content="latin1" />
+        <h2>Editar Tarefa</h2>
+        <form method="post" action="/update">
+            <dl>
+                <p>
+                    <input name="inputTitulo" value="{{ row['tarefa_titulo'] }}" type="text" placeholder="Titulo" autocomplete="off" required>
+                </p>
+                <p>
+                    <input name="inputDescricao" value="{{ row['tarefa_descricao'] }}" type="text" placeholder="Descricao" autocomplete="off" required>
+                </p>
+                <p>
+                    <input name="inputStatus" value="{{ row['tarefa_status'] }}" type="text" placeholder="A,C,D,F" autocomplete="off" required>
+					<BR>Status da tarefa: A(aberta), C(cancelada), D(desenvolvendo), F (finalizada)
+                </p>
+            </dl>
+            <p>
+                <input name="id" value="{{ row['tarefa_id'] }}" type="hidden">
+                <input type="submit" value="Submit">
+            </p>
+        </form>
